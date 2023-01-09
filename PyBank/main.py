@@ -68,7 +68,7 @@ greatest_decrease_results = f"Greatest Decrease in Profits: {decrease_date} ${gr
 print(greatest_decrease_results)
 
 # creating a new file and writing the results into it
-with open("./PyBank/results_file.txt", 'w') as file:
+with open("./PyBank/PyBank_results.txt", 'w') as file:
     file.write("Financial Analysis\n")
     file.write("---------------------\n")
     file.write(f"{total_months_results}\n")
