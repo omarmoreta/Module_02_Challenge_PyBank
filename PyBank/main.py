@@ -64,7 +64,7 @@ greatest_row = budget_dataframe.loc[budget_dataframe['Daily Change'] == greatest
 
 # converting the date into a string and removing the index
 decrease_date = greatest_row["Date"].to_string(index=False)
-greatest_decrease_results = f"Greatest Decrease in Losses: {decrease_date} ${greatest_decrease}"
+greatest_decrease_results = f"Greatest Decrease in Profits: {decrease_date} ${greatest_decrease}"
 print(greatest_decrease_results)
 
 # creating a new file and writing the results into it
