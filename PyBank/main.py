@@ -34,12 +34,9 @@ print(net_total_results)
 # finding the daily change by subtracting current day - previous day
 daily_change = budget_dataframe["Profit/Losses"].diff()
 
-# finding the total change by adding all daily change values
-total_change = daily_change.sum()
+# finding the average change by the mean
+average_change = daily_change.mean()
 
-# finding the average by dividing total change by the total size of values
-size_of_values = budget_dataframe["Profit/Losses"].size
-average_change = total_change/size_of_values
 average_change_results = f"Average Change: ${average_change: .2F}"
 print(average_change_results)
 
